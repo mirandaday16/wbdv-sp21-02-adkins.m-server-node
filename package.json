@@ -1,0 +1,14 @@
+{
+  "name": "wbdv-sp21-02-adkins.m-server-node",
+  "version": "1.0.0",
+  "description": "Node Server for CS5610 Assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miranda Adkins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
