@@ -2,6 +2,6 @@ const express = require('express')
 const app = express()
 
 const quizzesController = require('./controllers/quizzes-controller')
-quizzes(app)
+quizzesController(app)
 
 app.listen(4000)
