@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const questionService = require("../services/questions-service")
+    const questionService = require("../questions/questions-service")
 
     const findQuestionsForQuiz = (req, res) => {
         const quizId = req.params['qid']
