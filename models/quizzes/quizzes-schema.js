@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+
 const quizzesSchema = mongoose.Schema({
     _id: String,
     title: String,
@@ -7,4 +8,5 @@ const quizzesSchema = mongoose.Schema({
         ref: 'QuestionsModel'
     }]
 }, {collection: 'quizzes'})
+
 module.exports = quizzesSchema

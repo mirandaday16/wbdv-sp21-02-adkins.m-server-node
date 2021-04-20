@@ -10,4 +10,7 @@ const findAttemptsForQuiz = (qzid) => quizAttemptsModel.find({quiz: qzid}).popul
 const createAttempt = (qid, attempt) =>
     quizAttemptsModel.create({ quiz: qid, answers: attempt, score: scoreQuiz(attempt) })
 
-module.exports = { createAttempt, findAttemptsForQuiz }
+module.exports = {
+    createAttempt,
+    findAttemptsForQuiz
+}
