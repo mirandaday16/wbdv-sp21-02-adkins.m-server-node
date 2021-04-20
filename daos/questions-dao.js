@@ -1,10 +1,9 @@
 const questionsModel = require('../models/questions/questions-model')
-const quizzesModel = require('../models/quizzes/quizzes-model')
 
 const findAllQuestions = () => questionsModel.find()
-const findQuestionById = (qid) => questionsModel.findById(qid)
-const findQuestionsForQuiz = (qzid) => quizzesModel.findById(qzid)
-    .populate('questions').exec().then(quiz => quiz.questions)
+const findQuestionById = (qid) => questionsModel.find({_id: qid})
+const findQuestionsForQuiz = (qzid) => questionsModel.find({quizId: qzid})
+    .populate('questions').exec().then(questions => questions)
 
 module.exports = {
     findAllQuestions,
