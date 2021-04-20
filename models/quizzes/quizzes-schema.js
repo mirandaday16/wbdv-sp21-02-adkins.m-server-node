@@ -6,7 +6,11 @@ const quizzesSchema = mongoose.Schema({
     questions: [{
         type: String,
         ref: 'QuestionsModel'
-    }]
+    }],
+    attempts: [{
+        type: String,
+        ref: 'QuizAttemptModel'
+    }],
 }, {collection: 'quizzes'})
 
 module.exports = quizzesSchema
