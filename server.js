@@ -30,4 +30,5 @@ quizzesController(app)
 questionsController(app)
 attemptsController(app)
 
+require('dotenv').config();
 app.listen(process.env.MONGODB_URI || 3000);
