@@ -31,4 +31,4 @@ questionsController(app)
 attemptsController(app)
 
 require('dotenv').config();
-app.listen(process.env.MONGODB_URI || 3000);
+app.listen(process.env.PORT || 3000);
